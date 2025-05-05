@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            text-transform: capitalize;
+        
+        }
+        table tr:nth-of-type(even){
+            background-color: #f2f2f2;
+        }
+        table td, table th{
+            background-color: #f2f2f2;
+        }
+        table tfoot tr, table thead tr{
+            background-color: repeating-linear-gradient(70kg, #ff7e5f 10%, #171715 12%);
+            color: white;
+        }
+        table thead{
+            text-transform: uppercase;
+        }
+
+        tr > :first-child{
+            padding-stright: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>monday</th>
+                <th>plantain</th>
+                <th>egg</th>
+                <th>chicken</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>wednesday</th>
+                <td>rice</td>
+                <td>fufu</td>
+                <td>fufu</td>
+            </tr>
+            <tr>
+                <th>thursday</th>
+                <td>scrambled egg</td>
+                <td>jollof</td>
+                <td>beans</td>
+            </tr>
+            <tr>
+                <th>friday</th>
+                <td>mango</td>
+                <td>ram suya</td>
+                <td>indomie</td>
+            </tr>
+            <tr>
+                <th>saturday</th>
+                <td>eba</td>
+                <td>yam and stew</td>
+                <td>beans</td>
+            </tr>
+            <tr>
+                <th>sunday</th>
+                <td>rice</td>
+                <td>rice</td>
+                <td>rice</td>
+            </tr>
+            <tr>
+                <th>tuesday</th>
+                <td>spag</td>
+                <td>spag</td>
+                <td>spag</td>
+            </tr>
+            <tr>
+                <th>monday</th>
+                <td>rice</td>
+                <td>rice</td>
+                <td>eba</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <ul>
+                        <li>menu for the week</li>
+                        <li>the menu is for second part</li>
+                        <li>please adhara strictly</li>
+                    </ul>
+                </td>
+            </tr>
+        </tfoot>
+    </table
+</body>
+</html>

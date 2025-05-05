@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Create an account</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+            <ul>
+                <li> <label for="fullname">fullname</label>
+                <input type="text" name="name" id="fullname"></li>
+                <li>
+                    <label for="email">email address</label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="enter your phone number">
+                </li>
+                <li>
+                <span>gender</span><br>
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">female</label>
+                </li>
+                <li>
+                <span>marital status</span><br>
+                <input type="radio" name="marital status" id="single">
+                <label for="single">single</label>
+                <input type="radio" name="marital status" id="married">
+                <label for="married">married</label>
+                <input type="radio" name="marital status" id="divorced">
+                <label for="divorced">divorced</label>
+                <input type="radio" name="marital status" id="widowed" placeholder="widowed">
+                <label for="widowed">widowed</label>
+                </li>
+                <li>
+                    <label for="residence">residential address</label>
+                    <input type="tel" name="residence" id="residence">
+                </li>
+                <li>
+                    <input type="date" name="dob" id="dob" title="date of birth" required>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>professional data</legend>
+            <ul>
+                <li>
+                    <span>religion status</span><br>
+                <input type="radio" name=religion id="christian" checked>
+                <label for="christian">christian</label>
+                <input type="radio" name=religion id="muslim">
+                <label for="muslim">muslim</label>
+                <input type="radio" name=religion id="traditional">
+                <label for="traditional">traditional</label>
+                <input type="radio" name=religion id="other">
+                <label for="other">other</label>
+                </li>
+
+                <li>
+                    <p>state of origin</p>
+              
+                <select name="state" id="sate" title="state of origin">
+                    <optgroup label="south east">
+                        <option value="ab">Abia</option>
+                        <option value="an">Anambra</option>
+                        <option value="eb">Ebonyi</option>
+                        <option value="en">Enugu</option>
+                        <option value="im">Imo</option>
+                    </optgroup>
+                    <optgroup label="south west">
+                        <option value="ek">Ekiti</option>
+                        <option value="og">Ogun</option>
+                        <option value="os">Osun</option>
+                        <option value="on">Ondo</option>
+                        <option value="oy">Oyo</option>
+                        <option value="lg">lagos</option>
+                    </optgroup>
+                    <optgroup label="south south">
+                        <option value="Ed">Edo</option>
+                        <option value="ak">Akwa Ibom</option>
+                        <option value="ba">Bayelsa</option>
+                        <option value="cr">Cross River</option>
+                        <option value="de">Delta</option>
+                        <option value="ri">Rivers</option>
+                    </optgroup>
+                    <optgroup label="north central">
+                        <option value="ab">Abuja</option>
+                        <option value="by">Benue</option>
+                        <option value="ni">Niger</option>
+                        <option value="kw">Kwara</option>
+                        <option value="na">Nasarawa</option>
+                        <option value="pl">Plateau</option>
+                    </optgroup>
+                    <optgroup label="north east">
+                        <option value="ba">Bauchi</option>
+                        <option value="bo">Borno</option>
+                        <option value="g">Gombe</option>
+                        <option value="ta">Taraba</option>
+                        <option value="yo">Yobe</option>
+                        <option value="ad">Adamawa</option>
+                    </optgroup>
+                    <optgroup label="north west">
+                        <option value="ka">Kano</option>
+                        <option value="ke">Kebbi</option>
+                        <option value="Sk">sokoto</option>
+                        <option value="za">Zamfara</option> 
+                        <option value="ka">Katsina</option>
+                        <option value="Jw">Jigawa</option>
+                        <option value="Kd">Kaduna</option>
+                        
+                        
+                      
+                    </optgroup>
+
+                    
+
+        </select>
+                </li>
+            </ul>
+            
+            
+            <ul>
+                <li>
+                    <p>health record</p>
+
+                    <input type="checkbox" name="health" id="heart">
+                    <label for="heart">heart issue</label>
+                    <input type="checkbox" name="health" id="diabetic">
+                    <label for="diabetic">diabetic</label>
+                    <input type="checkbox" name="health" id="viual">
+                    <label for="viual">visual impediment</label>
+                    <input type="checkbox" name="health" id="disabled">
+                    <label for="disabled">disabled</label>
+                    <input type="checkbox" name="health" id="hearing">
+                    <label for="hearing">hearing problem</label>
+                    <input type="checkbox" name="health" id="asthma">
+                    <label for="asthma">asthma</label>
+                    <input type="checkbox" name="health" id="none">
+                    <label for="none">none</label>
+                    
+                </li>
+                <li>
+                    <label for="resume">upload your resume</label>
+                    <input type="file" name="resume" id="resume">
+                </li>
+
+
+
+                <li>
+                    <label for="portolio">portfolio</label>
+                    <input type="url" name="portfolio" id="portolio" accept=".pdf,.doc,.docx">
+                </li>
+                <li>
+                    <label for="pad">create password</label>
+                    <input type="password" name="pad" id="pad">
+
+
+                   
+                </li>
+                <li>
+                    <label for="exp">years of experience</label>
+                    <input type="number" name="exp" id="exp" min="2" max="20">
+                    </li>
+
+                    <li>
+                        <label for="dosc">describe your self in not less than 150 words</label><br>
+                        <textarea name="dosc" id="dosc" cols="50" rows="15"></textarea>
+                        
+                    </li>
+                <li>
+                    <p>upload image</p>
+                    <input type="file" name="photo" id="photo" accept="image/png" title="upload photo">
+                <li>
+                    <p>account</p>
+                    <input type="submit" value="create account">
+                    <button type="reset">reset account</button>    
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
